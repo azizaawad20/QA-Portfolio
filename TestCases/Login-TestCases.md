@@ -1,44 +1,36 @@
-# Login Test Cases
+## TC-001
 
-## TC-001: Login with Valid Credentials
+**Related Scenario:** TS-001
 
-**Precondition:**
-User has a registered account.
+**Title**
+Verify login with valid credentials.
 
-**Steps:**
+**Priority**
+High
+
+**Preconditions**
+- User is on the Login page.
+
+**Test Data**
+
+| Username | Password |
+|----------|----------|
+| standard_user | secret_sauce |
+
+**Steps**
+
 1. Open Login page.
-2. Enter valid username.
-3. Enter valid password.
+2. Enter username.
+3. Enter password.
 4. Click Login.
 
-**Expected Result:**
-User is redirected to Dashboard.
+**Expected Result**
 
----
+- User is redirected to the Inventory page.
+- No error message is displayed.
 
-## TC-002: Login with Invalid Password
+**Actual Result**
+To be filled during execution.
 
-**Precondition:**
-User has a registered account.
-
-**Steps:**
-1. Open Login page.
-2. Enter valid username.
-3. Enter invalid password.
-4. Click Login.
-
-**Expected Result:**
-Error message is displayed.
-User remains on Login page.
-
----
-
-## TC-003: Login with Empty Fields
-
-**Steps:**
-1. Open Login page.
-2. Leave username and password empty.
-3. Click Login.
-
-**Expected Result:**
-Validation messages are displayed.
+**Status**
+Not Executed
